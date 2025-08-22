@@ -334,3 +334,123 @@ footer p {
     color: #333;
     margin-top: 20px;
 }
+
+@media (max-width: 720px){
+
+    html, body{
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .container{
+        max-width: 100%;
+        padding: 0;
+        display: block;
+        gap: 0;
+        margin: 0; 
+    }
+
+    .house-gallery{ 
+        gap: 14px;
+        justify-content: center;
+    }
+
+    .house-card{
+        display: block;
+        width: 88%;
+        height: auto;
+        margin: 0;
+        border-radius: 12px;
+    }
+
+    .house-card .img-wrapper{
+        width: 100%;
+        height: auto;
+    }
+
+    .house-card .img-wrapper img{
+        width: 100% !important;
+        height: auto !important;
+        aspect-ratio: 16/9;
+        object-fit: cover;
+        display: block;
+    }
+
+    .house-card .house-info{
+        position: static;
+        inset: auto;
+        width: 100%;
+        background: #fff;
+        padding: 14px 16px;
+        display: block;
+        text-align: left;
+    }
+
+    .house-info .titulo{ font-size: 16px; margin: 0 0 6px; }
+    .house-info .meta  { font-size: 14px; margin: 6px 0; }
+    .house-info .fonte { font-size: 12px; margin: 4px 0 0; }
+
+    footer {
+        width: 100vw;                              
+        margin-left: calc(50% - 50vw);              
+        margin-right: calc(50% - 50vw);            
+    }
+
+   .navbar-container {
+        padding: 0 20px;
+    }
+
+    .navbar-container .logo {
+        width: 55px;
+        margin-top: 25px;
+    }
+
+    .navbar-container li {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    footer{ padding: 28px 16px 44px; }
+    footer h3{ font-size: 22px; }
+    .btn-fake{ display: block; margin: 8px auto; }
+
+    .houses-found h1{
+        padding: 25px 25px 10px 25px;
+        font-size: clamp(22px, 5vw, 28px);
+        line-height: 1.2;
+        margin: auto;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .houses-found h1{
+        padding: 25px 25px 10px 35px;
+        font-size: clamp(22px, 5vw, 28px);
+        line-height: 1.2;
+        margin: auto;
+        font-size: 15px;
+    }
+
+}
+
+@media (min-width: 721px) and (max-width: 1000px) {
+    .container {
+        justify-content: center;
+    }
+    .houses-found h1 {
+        margin-left: 30px;
+        font-size: 26px;
+    }
+    .house-card {
+        width: 88%;
+    }
+    .house-gallery {
+        padding: 0;
+        justify-content: center;
+    }
+
+    .house-info .titulo{ font-size: 20px; margin: 10px 0 16px; }
+    .house-info .meta  { font-size: 18px; margin: 25px 0; }
+    .house-info .fonte { font-size: 13px; margin: 10px 0 0; }
+}

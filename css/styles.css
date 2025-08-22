@@ -641,3 +641,26 @@ footer h3 {
         font-size: 15px;
     }
 }
+
+/* === RESPONSIVO do carrossel (#destaques) === */
+
+/* tablet: 2 cards por vez (opcional) */
+@media (max-width: 900px){
+  #destaques .dest-track > .house-card{
+    flex: 0 0 calc((100% - var(--gap)) / 2) !important;
+    height: 240px;
+  }
+}
+
+/* mobile: 1 card por vez */
+@media (max-width: 640px){
+  #destaques .dest-carousel{ padding: 0 40px; } /* espaço pras setas */
+  #destaques .dest-track{ gap: 12px; }
+  #destaques .dest-track > .house-card{
+    flex: 0 0 100% !important;   /* ocupa 100% da largura do viewport */
+    height: 230px;
+  }
+  #destaques .house-card .img-wrapper{ height: 100%; }
+  #destaques .house-info .titulo{ font-size: .98rem; }
+  #destaques .house-info .meta{ font-size: .9rem; }
+}
