@@ -642,9 +642,6 @@ footer h3 {
     }
 }
 
-/* === RESPONSIVO do carrossel (#destaques) === */
-
-/* tablet: 2 cards por vez (opcional) */
 @media (max-width: 900px){
   #destaques .dest-track > .house-card{
     flex: 0 0 calc((100% - var(--gap)) / 2) !important;
